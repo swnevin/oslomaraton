@@ -1,12 +1,12 @@
 :host {
-    --border-color-dark: #01060a;
-    --border-color-light: #5c5d5e;
+    --border-color-dark: #0e0e0e;
+    --border-color-light: #535353;
     --text-color-secondary: #434242;
     --background-color-light: #f2f6ff;
     --background-color-medium: #222427;
-    --header-gradient-start: #606061;
+    --header-gradient-start: #1a1a1a;
     --header-gradient-middle: #282929;
-    --header-gradient-end: #0c0c0c;
+    --header-gradient-end: #000000;
     --button-border: #282829;
     --button-fill: #e8e8e8;
     --system-message: #f0f0f0;
@@ -15,12 +15,12 @@
   
   /*Generelle stiler:*/
   .vfrc-widget--chat {
-    border-radius: 20px;
+    border-radius: 10px;
     border: 0.5px solid var(--border-color-light);
   }
   
   .vfrc-header {
-    background: linear-gradient(to right, var(--header-gradient-start) 40%, var(--header-gradient-end));
+    background: linear-gradient(to right, var(--header-gradient-end) 60%, var(--header-gradient-start));
   }
   
   .vfrc-footer { 
@@ -51,21 +51,15 @@
   background-position: left;
   }
   
-  /* Knappestiler */
-  .vfrc-button--thumbs-up {
-  size: 50%;
-  background-color: var(--text-color-secondary);
-  }
-  
   .vfrc-button--secondary {
-  border-radius: 10px;
+  border-radius: 8px;
   border: 1.6px solid var(--button-border);
   font-weight: 200;
   background-color: var(--button-fill);
   }
   
   .vfrc-button--secondary:hover {
-  border-radius: 10px;
+  border-radius: 8px;
   border: 1.6px solid var(--header-gradient-end);
   font-weight: 200;
   background-color: var(--system-message);
@@ -73,7 +67,7 @@
   
   .vfrc-button--primary[label="End Chat"],
   .vfrc-button--primary[label="Cancel"] {
-  border-radius: 10px;
+  border-radius: 8px;
   color: var(--text-color-secondary);
   border: 1.6px solid var(--text-color-secondary);
   font-family: 'Roboto', sans-serif;
@@ -96,24 +90,24 @@
   .vfrc-system-response .vfrc-message {
   background-color: var(--system-message);
   color: var(--text-color-secondary);
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
   border-bottom-left-radius: 0px; 
-  border-bottom-right-radius: 15px;
+  border-bottom-right-radius: 8px;
   }
   
   .vfrc-user-response .vfrc-message {
   background-color: var(--background-color-medium);
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  border-bottom-left-radius: 15px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
   border-bottom-right-radius: 0px; 
   }
   
   /* Chat inndatafelt */
   .vfrc-chat-input {
   border: 0.5px solid var(--border-color-light);
-  border-radius: 15.5px;
+  border-radius: 8.5px;
   }
   
   .vfrc-chat-input textarea {
@@ -150,16 +144,16 @@
   .vfrc-chat-input textarea:not(:placeholder-shown),
   .vfrc-chat-input--button {
   line-height: 18px; /* Juster linjehøyden for vertikal sentrering */
-  border-bottom-left-radius: 15px;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
   background-color: var(--button-fill);
   }
   
   .vfrc-chat-input textarea:focus {
-  border-bottom-left-radius: 15px;
-  border-top-left-radius: 15px;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
   }
@@ -201,9 +195,9 @@
   
   .vfrc-proactive-message {
   background-color: var(--background-color-white);
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  border-bottom-left-radius: 20px; 
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px; 
   border-bottom-right-radius: 0px;
   font-weight: 500;
   font-size: 14.5px;
