@@ -30,12 +30,19 @@
   }
   
   /* Tekst og farge */
-  .vfrc-assistant-info--title {
-  color: var(--border-color-dark);
+ .vfrc-assistant-info--title {
+  opacity:0;
   }
   
   .vfrc-assistant-info--description {
   color: var(--text-color-secondary);
+  font-size: 1.12em;
+  transform: translateY(-2em);
+  line-height: 1.5em; 
+  overflow: visible; 
+  white-space: normal; 
+  display: block;
+  max-height: none; 
   }
   
   .vfrc-chat--session-time,
